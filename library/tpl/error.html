@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $e['title'] ?></title>
+</head>
+<body>
+<style>
+    html {
+        background: #666;
+    }
+    body {
+        width : 600px;
+        overflow: hidden;
+        margin: 50px auto;
+        border: 1px #eeeeee solid;
+    }
+    h1{
+        text-align: center;
+        font-size: 16px;
+        height: 30px;
+        line-height: 30px;
+        font-weight:600;
+        background: #9c9c9c;
+        margin: 0;
+    }
+    section {
+        color: #fff;
+        padding: 10px;
+    }
+</style>
+<h1>
+    <?php echo $e[0] ?>
+</h1>
+<section>
+    <?php echo $e[1]; ?>
+</section>
+</body>
+</html>

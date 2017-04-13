@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><?php echo $info ;?></title>
+</head>
+<body>
+<h1><?php echo $info ;?></h1>
+<p><span id="mes"><?php echo $_time; ?></span>秒后转跳<a herf="<?php echo $referer ;?>">马上转跳</a></p>
+<script type="text/javascript">
+    var i = '<?php echo $_time; ?>';
+    var url = "<?php echo $referer ;?>";
+    var intervalid;
+    intervalid = setInterval("fun()", 1000);
+    function fun() {
+        if (i == 0) {
+            window.location.href = url;
+            clearInterval(intervalid);
+        }
+        document.getElementById("mes").innerHTML = i;
+        i--;
+    }
+</script>
+</body>
+</html>
