@@ -1,0 +1,26 @@
+{
+  "name": "ristodo/todophp",
+  "license": "Apache-2",
+  "author": {
+    "name": "liruizhao",
+    "email": "liruizhao970302@gmail.com"
+  },
+  "description": "the php blog",
+  "type": "project",
+  "config": {
+    "vendor-dir": "library/verdor/",
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "discard-changes": true
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "core\\": "library/core/"
+    },
+    "classmap": [
+      "application/",
+      "library/core/"
+    ]
+  }
+}
