@@ -5,8 +5,8 @@
     "name": "liruizhao",
     "email": "liruizhao970302@gmail.com"
   },
-  "description": "the php blog",
-  "type": "project",
+  "description": "the php develop framework",
+  "type": "framework",
   "config": {
     "vendor-dir": "library/verdor/",
     "preferred-install": "dist",
